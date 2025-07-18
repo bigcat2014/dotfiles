@@ -1,62 +1,41 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 format = """
-[](surface0)\
+[](light_black)\
 $os\
 $username\
-[](fg:surface0 bg:blue)\
+[](fg:light_black bg:blue)\
 $git_branch\
 $git_status\
-[](fg:blue bg:teal)\
+[](fg:blue bg:cyan)\
 $directory\
-[ ](fg:teal)\
+[ ](fg:cyan)\
 $line_break$character"""
 
-palette = 'catppuccin_mocha'
+palette = 'neon_heroes'
 
-[palettes.gruvbox_dark]
-color_fg0 = '#fbf1c7'
-color_bg1 = '#3c3836'
-color_bg3 = '#665c54'
-color_blue = '#458588'
-color_aqua = '#689d6a'
-color_green = '#98971a'
-color_orange = '#d65d0e'
-color_purple = '#b16286'
-color_red = '#cc241d'
-color_yellow = '#d79921'
-
-[palettes.catppuccin_mocha]
-rosewater = "#f5e0dc"
-flamingo = "#f2cdcd"
-pink = "#f5c2e7"
-orange = "#cba6f7"
-red = "#f38ba8"
-maroon = "#eba0ac"
-peach = "#fab387"
-yellow = "#f9e2af"
-green = "#a6e3a1"
-teal = "#94e2d5"
-sky = "#89dceb"
-sapphire = "#74c7ec"
-blue = "#89b4fa"
-lavender = "#b4befe"
-text = "#cdd6f4"
-subtext1 = "#bac2de"
-subtext0 = "#a6adc8"
-overlay2 = "#9399b2"
-overlay1 = "#7f849c"
-overlay0 = "#6c7086"
-surface2 = "#585b70"
-surface1 = "#45475a"
-surface0 = "#313244"
-base = "#1e1e2e"
-mantle = "#181825"
-crust = "#11111b"
+[palettes.neon_heroes]
+black       = "#0a0a0f"
+light_black = "#2d2d3d"
+red         = "#ff0055"
+light_red   = "#ff3399"
+green       = "#00ff00"
+light_green = "#33ff33"
+yellow      = "#ffff66"
+light_yellow= "#ffff99"
+blue        = "#33ccff"
+light_blue  = "#66ddff"
+magenta     = "#cc00ff"
+light_magenta="#ff66ff"
+cyan        = "#00ffff"
+light_cyan  = "#66ffff"
+white       = "#dcdcdc"
+light_white = "#ffffff"
+danger      = "#ff3399"  # for errors/warnings
 
 [os]
 disabled = false
-style = "bg:surface0 fg:text"
+style = "bg:light_black fg:light_white"
 
 [os.symbols]
 Windows = "󰍲"
@@ -81,24 +60,24 @@ RedHatEnterprise = "󱄛"
 
 [username]
 show_always = true
-style_user = "bg:surface0 fg:text"
-style_root = "bg:surface0 fg:text"
+style_user = "bg:light_black fg:light_white"
+style_root = "bg:light_black fg:light_white"
 format = '[ $user ]($style)'
 
 [directory]
-style = "fg:mantle bg:teal"
+style = "fg:light_black bg:cyan"
 format = "[ $path ]($style)"
 truncation_length = 3
 truncation_symbol = "…/"
 
 [git_branch]
 symbol = ""
-style = "bg:teal"
-format = '[[ $symbol $branch ](fg:base bg:blue)]($style)'
+style = "bg:cyan"
+format = '[[ $symbol $branch ](fg:light_black bg:blue)]($style)'
 
 [git_status]
-style = "bg:teal"
-format = '[[($all_status$ahead_behind )](fg:base bg:blue)]($style)'
+style = "bg:cyan"
+format = '[[($all_status$ahead_behind )](fg:light_black bg:blue)]($style)'
 
 [line_break]
 disabled = false
@@ -107,7 +86,7 @@ disabled = false
 disabled = false
 success_symbol = '[](bold fg:green)'
 error_symbol = '[](bold fg:red)'
-vimcmd_symbol = '[](bold fg:creen)'
-vimcmd_replace_one_symbol = '[](bold fg:purple)'
-vimcmd_replace_symbol = '[](bold fg:purple)'
-vimcmd_visual_symbol = '[](bold fg:lavender)'
+vimcmd_symbol = '[](bold fg:green)'
+vimcmd_replace_one_symbol = '[](bold fg:magenta)'
+vimcmd_replace_symbol = '[](bold fg:magenta)'
+vimcmd_visual_symbol = '[](bold fg:light_magenta)'
