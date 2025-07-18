@@ -1,5 +1,6 @@
 /* === Neon Heroes Waybar Theme === */
 /* Inspired by Black Panther and Iron Man neon artwork */
+@import "neon_heroes.css";
 
 * {
   font-family: "Hurmit Nerd Font", "Symbols Nerd Font";
@@ -10,20 +11,20 @@
 }
 
 window#waybar {
-  background-color: rgba(10, 10, 15, 0.8); /* #0a0a0f @ 80% */
-  color: #dcdcdc;
+  background-color: rgba(10, 10, 15, 0.8); /* @black @ 80% */
+  color: @white;
 }
 
 /* Modules */
 #workspaces button {
-  color: #dcdcdc;
-  background: #2d2d3d;
+  color: @white;
+  background: @light_black;
   font-weight: bold;
 }
 
 #workspaces button.active {
-  color: #0a0a0f;
-  background: #33ccff;
+  color: @black;
+  background: @light_blue;
   font-weight: bold;
 }
 
@@ -35,20 +36,20 @@ window#waybar {
 #memory,
 #custom-gpu-usage {
   padding: 0 10px;
-  color: #dcdcdc;
-  background-color: #2d2d3d;
+  color: @white;
+  background-color: @light_black;
   margin: 0 5px;
 }
 
 #pulseaudio.muted {
-  color: #cc00ff;
-  background-color: #2d2d3d;
+  color: @magenta;
+  background-color: @light_black;
 }
 
 /* Tooltips */
 tooltip {
-  background: #2d2d3d;
-  color: #ffffff;
+  background: @light_black;
+  color: @light_white;
   border-radius: 8px;
   padding: 5px;
 }
@@ -56,7 +57,11 @@ tooltip {
 /* Hover effect for modules */
 #clock:hover,
 #network:hover {
-  background-color: #33ccff;
-  color: #0a0a0f;
+  background-color: @light_blue;
+  color: @black;
 }
 
+menu {
+  background: @light_black;
+  color: @light_white;
+}

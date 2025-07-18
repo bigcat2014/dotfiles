@@ -1,0 +1,16 @@
+@define-color black         #0a0a0f;
+@define-color red           #ff0055;
+@define-color green         #00ffcc;
+@define-color yellow        #ffff66;
+@define-color blue          #00aaff;
+@define-color magenta       #cc00ff;
+@define-color cyan          #00ffff;
+@define-color white         #dcdcdc;
+@define-color light_black   #2d2d3d;
+@define-color light_red     #ff3399;
+@define-color light_green   #66ffd9;
+@define-color light_yellow  #ffff99;
+@define-color light_blue    #33ccff;
+@define-color light_magenta #ff66ff;
+@define-color light_cyan    #66ffff;
+@define-color light_white   #ffffff;

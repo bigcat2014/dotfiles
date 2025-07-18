@@ -15,23 +15,23 @@ $line_break$character"""
 palette = 'neon_heroes'
 
 [palettes.neon_heroes]
-black       = "#0a0a0f"
-red         = "#ff0055"
-green       = "#00ffcc"
-yellow      = "#ffff66"
-blue        = "#00aaff"
-magenta     = "#cc00ff"
-cyan        = "#00ffff"
-white       = "#dcdcdc"
-light_black = "#2d2d3d"
-light_red   = "#ff3399"
-light_green = "#66ffd9"
-light_yellow= "#ffff99"
-light_blue  = "#33ccff"
-light_magenta="#ff66ff"
-light_cyan  = "#66ffff"
-light_white = "#ffffff"
-danger      = "#ff3399"  # for errors/warnings
+black         = "#0a0a0f"
+red           = "#ff0055"
+green         = "#00ffcc"
+yellow        = "#ffff66"
+blue          = "#00aaff"
+magenta       = "#cc00ff"
+cyan          = "#00ffff"
+white         = "#dcdcdc"
+light_black   = "#2d2d3d"
+light_red     = "#ff3399"
+light_green   = "#66ffd9"
+light_yellow  = "#ffff99"
+light_blue    = "#33ccff"
+light_magenta = "#ff66ff"
+light_cyan    = "#66ffff"
+light_white   = "#ffffff"
+danger        = "#ff3399"  # for errors/warnings
 
 [os]
 disabled = false
