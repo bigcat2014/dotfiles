@@ -2,7 +2,7 @@
 /* Inspired by Black Panther and Iron Man neon artwork */
 
 * {
-  font-family: "Hurmit Nerd Font", monospace;
+  font-family: "Hurmit Nerd Font", "Symbols Nerd Font";
   font-size: 14px;
   border: none;
   border-radius: 6px;
@@ -16,9 +16,9 @@ window#waybar {
 
 /* Modules */
 #workspaces button {
-  padding: 0 8px;
-  color: #999;
-  background: transparent;
+  color: #dcdcdc;
+  background: #2d2d3d;
+  font-weight: bold;
 }
 
 #workspaces button.active {
@@ -27,32 +27,17 @@ window#waybar {
   font-weight: bold;
 }
 
-#workspaces button:hover {
-  background: #2d2d3d;
-}
-
 #clock,
-#battery,
 #pulseaudio,
 #network,
 #tray,
-#backlight,
 #cpu,
 #memory,
-#custom-media {
+#custom-gpu-usage {
   padding: 0 10px;
   color: #dcdcdc;
-  background-color: #1a1a25;
+  background-color: #2d2d3d;
   margin: 0 5px;
-}
-
-/* Bright colored highlights for important modules */
-#battery.warning {
-  background-color: #ff0055;
-  color: #ffffff;
-}
-#battery.critical {
-  background-color: #ff3399;
 }
 
 #pulseaudio.muted {
@@ -60,14 +45,9 @@ window#waybar {
   background-color: #2d2d3d;
 }
 
-#custom-media {
-  background-color: #33ccff;
-  color: #0a0a0f;
-}
-
 /* Tooltips */
 tooltip {
-  background: #1e1e2f;
+  background: #2d2d3d;
   color: #ffffff;
   border-radius: 8px;
   padding: 5px;
@@ -75,7 +55,6 @@ tooltip {
 
 /* Hover effect for modules */
 #clock:hover,
-#battery:hover,
 #network:hover {
   background-color: #33ccff;
   color: #0a0a0f;
