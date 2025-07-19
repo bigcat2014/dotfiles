@@ -10,7 +10,12 @@ function pacman() {
     if [[ "$*" == "-Syu" ]]; then
     	command pacman -Syu; alert
     elif [[ "$*" == "clean" ]]; then
-        command pacman -Qdtq | sudo pacman -Rns -
+        packages=$(command pacman -Qdtq)
+        if [[ $packages != "" ]]; then
+            sudo pacman -Rns - $packages
+        else
+            printf "Nothing to clean!"
+        fi
     else
         command pacman "$@"
     fi
@@ -20,7 +25,12 @@ function yay() {
     if [[ "$*" == "-Syu" ]]; then
     	command yay -Syu; alert
     elif [[ "$*" == "clean" ]]; then
-        command yay -Qdtq | command yay -Rns -
+        packages=$(command yay -Qdtq)
+        if [[ $packages != "" ]]; then
+            command yay -Rns - $packages
+        else
+            printf "Nothing to clean!"
+        fi
     else
         command yay "$@"
     fi

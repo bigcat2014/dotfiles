@@ -12,9 +12,9 @@ vim.opt.scrolloff = 10                             -- Keep 10 lines above/below 
 vim.opt.sidescrolloff = 8                          -- Keep 8 columns left/right of cursor
 
 -- Indentation
-vim.opt.tabstop = 2                                -- Tab width
-vim.opt.shiftwidth = 2                             -- Indent width
-vim.opt.softtabstop = 2                            -- Soft tab stop
+vim.opt.tabstop = 4                                -- Tab width
+vim.opt.shiftwidth = 4                             -- Indent width
+vim.opt.softtabstop = 4                            -- Soft tab stop
 vim.opt.expandtab = true                           -- Use spaces instead of tabs
 vim.opt.smartindent = true                         -- Smart auto-indenting
 vim.opt.autoindent = true                          -- Copy indent from current line
@@ -119,6 +119,15 @@ vim.api.nvim_create_autocmd("BufReadPost", {
     if mark[1] > 0 and mark[1] <= lcount then
       pcall(vim.api.nvim_win_set_cursor, 0, mark)
     end
+  end,
+})
+
+vim.api.nvim_create_autocmd("FileType", {
+  group = augroup,
+  pattern = { "cpp" },
+  callback = function()
+    vim.opt_local.tabstop = 2
+    vim.opt_local.shiftwidth = 2
   end,
 })
 
