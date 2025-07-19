@@ -34,6 +34,7 @@ window#waybar {
 #tray,
 #cpu,
 #memory,
+#temperature,
 #custom-gpu-usage {
   padding: 0 10px;
   color: @white;
