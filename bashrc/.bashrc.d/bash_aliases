@@ -9,6 +9,8 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 function pacman() {
     if [[ "$*" == "-Syu" ]]; then
     	command pacman -Syu; alert
+    elif [[ "$*" == "clean" ]]; then
+        command pacman -Qdtq | sudo pacman -Rns -
     else
         command pacman "$@"
     fi
@@ -17,6 +19,8 @@ function pacman() {
 function yay() {
     if [[ "$*" == "-Syu" ]]; then
     	command yay -Syu; alert
+    elif [[ "$*" == "clean" ]]; then
+        command yay -Qdtq | command yay -Rns -
     else
         command yay "$@"
     fi
