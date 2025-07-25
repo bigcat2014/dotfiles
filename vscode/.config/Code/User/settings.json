@@ -1,0 +1,172 @@
+{
+    "telemetry.telemetryLevel": "off",
+    "security.workspace.trust.untrustedFiles": "open",
+    "files.associations": {
+        "*.cmake.in": "cmake"
+    },
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook"
+    },
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.renderWhitespace": "boundary",
+    "editor.copyWithSyntaxHighlighting": false,
+    "editor.dragAndDrop": false,
+    "editor.emptySelectionClipboard": false,
+    "editor.renderLineHighlight": "none",
+    "editor.minimap.renderCharacters": false,
+    "editor.minimap.scale": 2,
+    "editor.minimap.maxColumn": 75,
+    "editor.fontSize": 12,
+    "editor.matchBrackets": "near",
+    "maptz.regionfolder": {
+        "[python]": { //Language selector
+            "foldEnd": "# </editor-fold>", //Text inserted at the end of the fold
+            "foldEndRegex": "#[\\s]*</editor-fold>", //Regex used to find fold end text.
+            "foldStart": "# <editor-fold desc='[NAME]'>", //Text inserted at the start of the fold.
+            //Use the `[NAME]` placeholder to indicate
+            //where the cursor should be placed after
+            //insertion
+            "foldStartRegex": "#[\\s]*<editor-fold[\\s]*desc='(.*)'>", //Regex used to find fold start text.
+            "disableFolding": false //Turn off #region folding for this language
+        }
+    },
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "workbench.iconTheme": "vscode-icons",
+    "cmake.configureOnOpen": true,
+    "vsicons.dontShowNewVersionMessage": true,
+    "editor.showFoldingControls": "always",
+    "explorer.confirmDelete": false,
+    "git.confirmSync": false,
+    "json.maxItemsComputed": 10000,
+    "git.openRepositoryInParentFolders": "never",
+    "files.simpleDialog.enable": true,
+    "git.autofetch": true,
+    "editor.stickyScroll.enabled": true,
+    "workbench.editor.empty.hint": "hidden",
+    "remote.autoForwardPortsSource": "hybrid",
+    "[cpp]": {
+        "editor.defaultFormatter": "xaver.clang-format"
+    },
+    "cmake.pinnedCommands": [
+        "workbench.action.tasks.configureTaskRunner",
+        "workbench.action.tasks.runTask"
+    ],
+    "doxdocgen.generic.briefTemplate": "\\brief {text}",
+    "doxdocgen.generic.authorTag": "\\author {author} ({email})",
+    "doxdocgen.file.versionTag": "\\version 0.1",
+    "doxdocgen.file.fileTemplate": "\\file {name}",
+    "doxdocgen.cpp.tparamTemplate": "\\tparam {param} ",
+    "doxdocgen.generic.dateTemplate": "\\date {date}",
+    "doxdocgen.generic.paramTemplate": "\\param {param} ",
+    "doxdocgen.generic.returnTemplate": "\\return {type} ",
+    "C_Cpp.default.cppStandard": "c++17",
+    "C_Cpp.default.cStandard": "gnu11",
+    "scm.repositories.sortOrder": "name",
+    "terminal.integrated.scrollback": 100000,
+    "python.analysis.typeCheckingMode": "standard",
+    "C_Cpp.clang_format_fallbackStyle": "Google",
+    "C_Cpp.formatting": "clangFormat",
+    "C_Cpp.doxygen.generatedStyle": "//!",
+    "doxdocgen.c.triggerSequence": "//!",
+    "editor.fontFamily": "'Hurmit Nerd Font'",
+    "workbench.colorCustomizations": {
+        "titleBar.activeBackground": "#0a0a0f",
+        "titleBar.activeForeground": "#ffffff",
+        "activityBar.background": "#0a0a0f",
+        "activityBar.foreground": "#ffffff",
+        "sideBar.background": "#0a0a0f",
+        "sideBar.foreground": "#cccccc",
+        "sideBarSectionHeader.background": "#0a0a0f",
+        "sideBarSectionHeader.foreground": "#ffffff",
+        "tab.activeBackground": "#33ccff",
+        "tab.activeForeground": "#0a0a0f",
+        "tab.inactiveBackground": "#2d2d3d",
+        "tab.inactiveForeground": "#999999",
+        "editor.background": "#0a0a0f",
+        "editor.foreground": "#dcdcdc",
+        "editorLineNumber.foreground": "#444444",
+        "editorCursor.foreground": "#33ccff",
+        "editor.selectionBackground": "#264f78",
+        "editor.inactiveSelectionBackground": "#264f7844",
+        "editor.lineHighlightBackground": "#1a1a1a",
+        "editorWhitespace.foreground": "#444444",
+        "editorIndentGuide.background1": "#333333",
+        "editorIndentGuide.activeBackground1": "#555555",
+        "terminal.background": "#0a0a0f",
+        "terminal.foreground": "#dcdcdc",
+        "terminal.ansiBlack": "#0a0a0f",
+        "terminal.ansiRed": "#ff0055",
+        "terminal.ansiGreen": "#00ffcc",
+        "terminal.ansiYellow": "#ffff66",
+        "terminal.ansiBlue": "#00aaff",
+        "terminal.ansiMagenta": "#cc00ff",
+        "terminal.ansiCyan": "#00ffff",
+        "terminal.ansiWhite": "#dcdcdc",
+        "terminal.ansiBrightBlack": "#2d2d3d",
+        "terminal.ansiBrightRed": "#ff3399",
+        "terminal.ansiBrightGreen": "#66ffd9",
+        "terminal.ansiBrightYellow": "#ffff99",
+        "terminal.ansiBrightBlue": "#33ccff",
+        "terminal.ansiBrightMagenta": "#ff66ff",
+        "terminal.ansiBrightCyan": "#66ffff",
+        "terminal.ansiBrightWhite": "#ffffff"
+    },
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": "comment",
+                "settings": {
+                "foreground": "#666666",
+                    "fontStyle": "italic"
+                    }
+            },
+            {
+                "scope": "string",
+                "settings": {
+                    "foreground": "#00ffcc"
+                    }
+            },
+            {
+                "scope": "variable",
+                "settings": {
+                    "foreground": "#ffffff"
+                    }
+            },
+            {
+                "scope": "keyword",
+                "settings": {
+                "foreground": "#ff3399",
+                    "fontStyle": "bold"
+                    }
+            },
+            {
+                "scope": "constant.numeric",
+                "settings": {
+                    "foreground": "#ffff66"
+                    }
+            },
+            {
+                "scope": "storage",
+                "settings": {
+                    "foreground": "#cc00ff"
+                    }
+            },
+            {
+                "scope": "entity.name.function",
+                "settings": {
+                    "foreground": "#33ccff"
+                    }
+            },
+            {
+                "scope": "entity.name.type",
+                "settings": {
+                    "foreground": "#00aaff"
+                    }
+            }
+        ]
+},
+}
