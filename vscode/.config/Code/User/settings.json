@@ -2,7 +2,7 @@
     "telemetry.telemetryLevel": "off",
     "security.workspace.trust.untrustedFiles": "open",
     "files.associations": {
-        "*.cmake.in": "cmake"
+        ".*.in": "cmake"
     },
     "workbench.startupEditor": "newUntitledFile",
     "workbench.editorAssociations": {
@@ -17,7 +17,6 @@
     "editor.minimap.renderCharacters": false,
     "editor.minimap.scale": 2,
     "editor.minimap.maxColumn": 75,
-    "editor.fontSize": 12,
     "editor.matchBrackets": "near",
     "maptz.regionfolder": {
         "[python]": { //Language selector
@@ -72,7 +71,6 @@
     "C_Cpp.formatting": "clangFormat",
     "C_Cpp.doxygen.generatedStyle": "//!",
     "doxdocgen.c.triggerSequence": "//!",
-    "editor.fontFamily": "'Hurmit Nerd Font'",
     "workbench.colorCustomizations": {
         "titleBar.activeBackground": "#0a0a0f",
         "titleBar.activeForeground": "#ffffff",
@@ -169,4 +167,5 @@
             }
         ]
 },
+"editor.fontFamily": "'Hurmit Nerd Font'",
 }
