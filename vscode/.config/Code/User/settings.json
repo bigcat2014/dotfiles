@@ -168,4 +168,5 @@
         ]
 },
 "editor.fontFamily": "'Hurmit Nerd Font'",
+"cmake.showConfigureWithDebuggerNotification": false,
 }
