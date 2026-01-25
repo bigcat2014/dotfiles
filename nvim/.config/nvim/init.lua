@@ -57,7 +57,6 @@ vim.opt.autowrite = false                            -- Don't auto save
 vim.opt.hidden = true                              -- Allow hidden buffers
 vim.opt.errorbells = false                         -- No error bells
 vim.opt.visualbell = true                          -- Visual bell
-vim.opt.t_vb = true
 vim.opt.belloff = "all"                            -- Disable all bells
 vim.opt.backspace = "indent,eol,start"             -- Better backspace behavior
 vim.opt.autochdir = false                          -- Don't auto change directory
