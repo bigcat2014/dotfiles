@@ -2,12 +2,15 @@
     "telemetry.telemetryLevel": "off",
     "security.workspace.trust.untrustedFiles": "open",
     "files.associations": {
-        ".*.in": "cmake"
+        ".*.in": "cmake",
+        ".clang-format": "yaml",
+        ".clang-tidy": "yaml",
     },
     "workbench.startupEditor": "newUntitledFile",
     "workbench.editorAssociations": {
         "*.ipynb": "jupyter-notebook"
     },
+    "editor.parameterHints.enabled": false,
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.renderWhitespace": "boundary",
     "editor.copyWithSyntaxHighlighting": false,
@@ -48,7 +51,10 @@
     "workbench.editor.empty.hint": "hidden",
     "remote.autoForwardPortsSource": "hybrid",
     "[cpp]": {
-        "editor.defaultFormatter": "xaver.clang-format"
+        "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+    },
+    "[c]": {
+        "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
     },
     "cmake.pinnedCommands": [
         "workbench.action.tasks.configureTaskRunner",
@@ -169,4 +175,12 @@
 },
 "editor.fontFamily": "'Hurmit Nerd Font'",
 "cmake.showConfigureWithDebuggerNotification": false,
+"clangd.arguments": [
+    "--header-insertion=never",
+    "--compile-commands-dir=${workspaceFolder}/build/",
+    "--query-driver=**"
+],
+"C_Cpp.intelliSenseEngine": "disabled",
+"chat.viewSessions.orientation": "stacked",
+"C_Cpp.clang_format_style": "file:${workspaceFolder}/.clang-format",
 }
