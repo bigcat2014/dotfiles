@@ -6,34 +6,13 @@ alias l='ls -CF'
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
-function pacman() {
-    if [[ "$*" == "-Syu" ]]; then
-    	command pacman -Syu; alert
-    elif [[ "$*" == "clean" ]]; then
-        sudo pacman -Sc
-        packages=$(command pacman -Qdtq)
-        if [[ $packages != "" ]]; then
-            sudo pacman -Rns - $packages
-        else
-            printf "Nothing to clean!"
-        fi
+function docker() {
+    if [[ "$*" == "image ls -A" ]]; then
+        command docker image ls -a 2>/dev/null | grep -v "vsc"
+    elif [[ "$*" == "container ls -A" ]]; then
+        command docker container ls -a 2>/dev/null | grep -v "vsc"
     else
-        command pacman "$@"
+        command docker "$@"
     fi
 }
 
-function yay() {
-    if [[ "$*" == "-Syu" ]]; then
-    	command yay -Syu; alert
-    elif [[ "$*" == "clean" ]]; then
-        command yay -Sc
-        packages=$(command yay -Qdtq)
-        if [[ $packages != "" ]]; then
-            command yay -Rns - $packages
-        else
-            printf "Nothing to clean!"
-        fi
-    else
-        command yay "$@"
-    fi
-}
