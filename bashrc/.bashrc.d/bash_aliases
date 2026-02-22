@@ -16,3 +16,10 @@ function docker() {
     fi
 }
 
+function git() {
+    if [[ "$1" == "pull" || "$1" == "fetch" ]]; then
+        command git "$@" --prune
+    else
+        command git "$@"
+    fi
+}
