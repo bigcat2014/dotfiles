@@ -10,7 +10,6 @@
     "workbench.editorAssociations": {
         "*.ipynb": "jupyter-notebook"
     },
-    "editor.parameterHints.enabled": false,
     "editor.multiCursorModifier": "ctrlCmd",
     "editor.renderWhitespace": "boundary",
     "editor.copyWithSyntaxHighlighting": false,
@@ -51,10 +50,12 @@
     "workbench.editor.empty.hint": "hidden",
     "remote.autoForwardPortsSource": "hybrid",
     "[cpp]": {
-        "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+        "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd",
+        "editor.formatOnSave": true
     },
     "[c]": {
-        "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd"
+        "editor.defaultFormatter": "llvm-vs-code-extensions.vscode-clangd",
+        "editor.formatOnSave": true
     },
     "cmake.pinnedCommands": [
         "workbench.action.tasks.configureTaskRunner",
@@ -97,9 +98,9 @@
         "editor.selectionBackground": "#264f78",
         "editor.inactiveSelectionBackground": "#264f7844",
         "editor.lineHighlightBackground": "#1a1a1a",
-        "editorWhitespace.foreground": "#444444",
-        "editorIndentGuide.background1": "#333333",
-        "editorIndentGuide.activeBackground1": "#555555",
+        "editorWhitespace.foreground": "#44444488",
+        "editorIndentGuide.background1": "#33333399",
+        "editorIndentGuide.activeBackground1": "#55555588",
         "terminal.background": "#0a0a0f",
         "terminal.foreground": "#dcdcdc",
         "terminal.ansiBlack": "#0a0a0f",
@@ -183,4 +184,14 @@
 "C_Cpp.intelliSenseEngine": "disabled",
 "chat.viewSessions.orientation": "stacked",
 "C_Cpp.clang_format_style": "file:${workspaceFolder}/.clang-format",
+"editor.inlayHints.enabled": "offUnlessPressed",
+"chat.mcp.gallery.enabled": true,
+"gitlens.codeLens.enabled": false,
+"github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+},
+"python.createEnvironment.trigger": "off",
 }
